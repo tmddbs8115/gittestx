@@ -1,0 +1,70 @@
+aspect 보조기능
+
+어드바이스 덮어씌우는 기능
+
+join point 
+
+덮어씌운것 중에 확정지을애들
+
+프록시 : 
+
+위빙 : 추가기능을 덮어씌우는
+
+에스펙트 어드바이스 위빙
+
+
+씌운 기능을 언제 실행시킬지
+
+before 핵심기능 실행 전에 보조기능 실행
+
+afterreturning  return구문이 끝나고 실행하는 aop
+
+afterThowing 에러처리를 한 뒤에 실행되는 aop
+
+after 예외 상관없이 호출 끝난뒤에 호출
+
+around 호출전부터 후까지 쭉실행
+
+
+
+select로 번호를 먼저 가져온다.
+
+int배열에 넣는다 (array)
+
+array.length를 잰다.
+
+0~n번까지 인덱스번호를 갖는다.
+
+그때 번호를 가져온다.
+
+
+	
+		
+//		int[] number = new int[2];
+//		
+//		for (int i = 0; i < number.length; i++) {
+//			number[i] = (int)(Math.random() * service.list().length)+1;
+//		}
+		int number = (int)(Math.random() * service.list().length)+1;
+		
+		model.addAttribute("list", number);
+		
+	}
+
+
+
+chungcheong
+ccno << 얘는 추가할 때마다 auto로 증가
+ccarea 
+ccpost
+cctype int << 지역 구분 칼럼 ex)0이면 충남,1이면 충북 2이면 세종
+
+
+
+
+
+
+	
+
+
+
