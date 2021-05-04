@@ -1,0 +1,19 @@
+create table prauser(
+	uid varchar(50) not null,
+    upw varchar(50) not null,
+    uname varchar(100) not null,
+    upoint int not null default 0,
+    primary key(uid)
+
+)
+//회원기능 테이블
+//은 주석달기로 쓰고 //*은 새로운 문법추가로 하자
+
+create table praboard(
+	bno int not null auto-increment,
+	title varchar(60),
+	contents varchar(1000),
+	writer varchar(40),
+	updatedate timestamp default now()
+	primary key(bno)
+);
